@@ -265,7 +265,6 @@
 		3BCF6D711EAFDAA6000EF50E /* PluginDDS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BCF6D471EAFDAA6000EF50E /* PluginDDS.cpp */; };
 		3BCF6D741EAFDAA6000EF50E /* PluginGIF.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BCF6D4A1EAFDAA6000EF50E /* PluginGIF.cpp */; };
 		3BCF6D761EAFDAA6000EF50E /* PluginICO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BCF6D4C1EAFDAA6000EF50E /* PluginICO.cpp */; };
-		3BCF6D771EAFDAA6000EF50E /* PluginIFF.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BCF6D4D1EAFDAA6000EF50E /* PluginIFF.cpp */; };
 		3BCF6D791EAFDAA6000EF50E /* PluginJNG.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BCF6D4F1EAFDAA6000EF50E /* PluginJNG.cpp */; };
 		3BCF6D7B1EAFDAA6000EF50E /* PluginJPEG.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BCF6D511EAFDAA6000EF50E /* PluginJPEG.cpp */; };
 		3BCF6D7E1EAFDAA6000EF50E /* PluginMNG.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BCF6D541EAFDAA6000EF50E /* PluginMNG.cpp */; };
@@ -660,7 +659,6 @@
 		3BCF6D471EAFDAA6000EF50E /* PluginDDS.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PluginDDS.cpp; path = FreeImage/PluginDDS.cpp; sourceTree = "<group>"; };
 		3BCF6D4A1EAFDAA6000EF50E /* PluginGIF.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PluginGIF.cpp; path = FreeImage/PluginGIF.cpp; sourceTree = "<group>"; };
 		3BCF6D4C1EAFDAA6000EF50E /* PluginICO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PluginICO.cpp; path = FreeImage/PluginICO.cpp; sourceTree = "<group>"; };
-		3BCF6D4D1EAFDAA6000EF50E /* PluginIFF.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PluginIFF.cpp; path = FreeImage/PluginIFF.cpp; sourceTree = "<group>"; };
 		3BCF6D4F1EAFDAA6000EF50E /* PluginJNG.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PluginJNG.cpp; path = FreeImage/PluginJNG.cpp; sourceTree = "<group>"; };
 		3BCF6D511EAFDAA6000EF50E /* PluginJPEG.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PluginJPEG.cpp; path = FreeImage/PluginJPEG.cpp; sourceTree = "<group>"; };
 		3BCF6D541EAFDAA6000EF50E /* PluginMNG.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PluginMNG.cpp; path = FreeImage/PluginMNG.cpp; sourceTree = "<group>"; };
@@ -1283,7 +1281,6 @@
 				3BCF6D471EAFDAA6000EF50E /* PluginDDS.cpp */,
 				3BCF6D4A1EAFDAA6000EF50E /* PluginGIF.cpp */,
 				3BCF6D4C1EAFDAA6000EF50E /* PluginICO.cpp */,
-				3BCF6D4D1EAFDAA6000EF50E /* PluginIFF.cpp */,
 				3BCF6D4F1EAFDAA6000EF50E /* PluginJNG.cpp */,
 				3BCF6D511EAFDAA6000EF50E /* PluginJPEG.cpp */,
 				3BCF6D541EAFDAA6000EF50E /* PluginMNG.cpp */,
@@ -2130,7 +2127,6 @@
 				3BCF6D7B1EAFDAA6000EF50E /* PluginJPEG.cpp in Sources */,
 				3BCF6E181EAFDE90000EF50E /* tif_dumpmode.c in Sources */,
 				3BCF6CB91EAFD75C000EF50E /* jcsample.c in Sources */,
-				3BCF6D771EAFDAA6000EF50E /* PluginIFF.cpp in Sources */,
 				3BCF6DB21EAFDC62000EF50E /* Flip.cpp in Sources */,
 				3BCF6E621EAFE28B000EF50E /* pngrtran.c in Sources */,
 				3BCF6D431EAFDA57000EF50E /* PixelAccess.cpp in Sources */,

@@ -109,7 +109,6 @@ extern "C" {
 
 void DLL_CALLCONV InitBMP(Plugin *plugin, int format_id);
 void DLL_CALLCONV InitICO(Plugin *plugin, int format_id);
-void DLL_CALLCONV InitIFF(Plugin *plugin, int format_id);
 void DLL_CALLCONV InitJPEG(Plugin *plugin, int format_id);
 void DLL_CALLCONV InitMNG(Plugin *plugin, int format_id);
 void DLL_CALLCONV InitPCX(Plugin *plugin, int format_id);

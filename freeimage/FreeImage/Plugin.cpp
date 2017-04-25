@@ -241,8 +241,6 @@ FreeImage_Initialise(BOOL load_local_plugins_only) {
 			s_plugins->AddNode(InitJPEG);
 			s_plugins->AddNode(InitJNG);
 
-			s_plugins->AddNode(InitIFF);
-
 			s_plugins->AddNode(InitMNG);
 			
 			s_plugins->AddNode(InitPCX);

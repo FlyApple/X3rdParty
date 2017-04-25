@@ -36,38 +36,38 @@ http://freeimage.sourceforge.net/download.html
 
 support format:
  BMP files [reading, writing]
- Dr. Halo CUT files [reading] *			-removed
+ Dr. Halo CUT files [reading] *				-removed
  DDS files [reading]
- EXR files [reading, writing]			-removed
- Raw Fax G3 files [reading]
+ EXR files [reading, writing]				-removed
+ Raw Fax G3 files [reading]					-removed
  GIF files [reading, writing]
- HDR files [reading, writing]
+ HDR files [reading, writing]				-removed
  ICO files [reading, writing]
- IFF files [reading]				-removed
- JBIG files [reading, writing] **
+ IFF files [reading]						-removed
+ JBIG files [reading, writing] **			-removed
  JNG files [reading, writing]
  JPEG/JIF files [reading, writing]
  JPEG-2000 File Format [reading, writing]	-removed
  JPEG-2000 codestream [reading, writing]	-removed
- JPEG-XR files [reading, writing]		-removed
- KOALA files [reading]				-removed
- Kodak PhotoCD files [reading]
+ JPEG-XR files [reading, writing]			-removed
+ KOALA files [reading]						-removed
+ Kodak PhotoCD files [reading]				-removed
  MNG files [reading]
  PCX files [reading]
  PBM/PGM/PPM files [reading, writing]		-removed
  PFM files [reading, writing]
  PNG files [reading, writing]
- Macintosh PICT files [reading]
- Photoshop PSD files [reading]
- RAW camera files [reading]
- Sun RAS files [reading]
+ Macintosh PICT files [reading]				-removed
+ Photoshop PSD files [reading]				-removed
+ RAW camera files [reading]					
+ Sun RAS files [reading]					-removed
  SGI files [reading]
  TARGA files [reading, writing]
  TIFF files [reading, writing]
- WBMP files [reading, writing]
- WebP files [reading, writing]			-removed
- XBM files [reading]
- XPM files [reading, writing] 
+ WBMP files [reading, writing]				-removed
+ WebP files [reading, writing]				-removed
+ XBM files [reading]						-removed
+ XPM files [reading, writing] 				-removed
 
 
 libraw: version 0.17.1
