@@ -1,8 +1,11 @@
+20170426:
+Added osx(Apple Mac System) platform support;
+
 20160129:
 The basic version has been collected to complete;
 
 -------------------------------------------------------------------------------------------
-glew : version 1.13.0
+glew : version 1.13.0 (only the windows platform)
 http://sourceforge.net/projects/glew/
 
 freetype: version 2.5.3
@@ -17,12 +20,12 @@ http://sourceforge.net/projects/zziplib/
 tinyxml: version 2.6.2
 http://sourceforge.net/projects/tinyxml/
 
-expatxml: version 2.1.0
+expatxml: version 2.1.0 (not support)
 http://sourceforge.net/projects/expat/
 
 lua: 
 	version 5.3.2
-	version 5.1.2
+	version 5.1.2 (removed)
 http://www.lua.org
 
 rapidxml: version 1.13.0
