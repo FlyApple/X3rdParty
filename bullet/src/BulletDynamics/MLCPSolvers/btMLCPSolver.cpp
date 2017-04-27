@@ -22,8 +22,7 @@ subject to the following restrictions:
 
 btMLCPSolver::btMLCPSolver(	 btMLCPSolverInterface* solver)
 :m_solver(solver),
-m_fallback(0),
-m_cfm(0.000001)//0.0000001
+m_fallback(0)
 {
 }
 
@@ -44,7 +43,7 @@ btScalar btMLCPSolver::solveGroupCacheFriendlySetup(btCollisionObject** bodies, 
 		int numFrictionPerContact = m_tmpSolverContactConstraintPool.size()==m_tmpSolverContactFrictionConstraintPool.size()? 1 : 2;
 
 
-		int numBodies = m_tmpSolverBodyPool.size();
+	//	int numBodies = m_tmpSolverBodyPool.size();
 		m_allConstraintPtrArray.resize(0);
 		m_limitDependencies.resize(m_tmpSolverNonContactConstraintPool.size()+m_tmpSolverContactConstraintPool.size()+m_tmpSolverContactFrictionConstraintPool.size());
 		btAssert(m_limitDependencies.size() == m_tmpSolverNonContactConstraintPool.size()+m_tmpSolverContactConstraintPool.size()+m_tmpSolverContactFrictionConstraintPool.size());
@@ -178,8 +177,8 @@ void btMLCPSolver::createMLCPFast(const btContactSolverInfo& infoGlobal)
 		}
 	}
 
-	btScalar* w = 0;
-	int nub = 0;
+//	btScalar* w = 0;
+//	int nub = 0;
 
 	m_lo.resize(numConstraintRows);
 	m_hi.resize(numConstraintRows);
@@ -216,12 +215,12 @@ void btMLCPSolver::createMLCPFast(const btContactSolverInfo& infoGlobal)
 		jointNodeArray.reserve(2*m_allConstraintPtrArray.size());
 	}
 
-	static btMatrixXu J3;
+    btMatrixXu& J3 = m_scratchJ3;
 	{
 		BT_PROFILE("J3.resize");
 		J3.resize(2*m,8);
 	}
-	static btMatrixXu JinvM3;
+    btMatrixXu& JinvM3 = m_scratchJInvM3;
 	{
 		BT_PROFILE("JinvM3.resize/setZero");
 
@@ -231,7 +230,7 @@ void btMLCPSolver::createMLCPFast(const btContactSolverInfo& infoGlobal)
 	}
 	int cur=0;
 	int rowOffset = 0;
-	static btAlignedObjectArray<int> ofs;
+    btAlignedObjectArray<int>& ofs = m_scratchOfs;
 	{
 		BT_PROFILE("ofs resize");
 		ofs.resize(0);
@@ -354,8 +353,8 @@ void btMLCPSolver::createMLCPFast(const btContactSolverInfo& infoGlobal)
 			int row__ = ofs[c];
 			int sbA = m_allConstraintPtrArray[i]->m_solverBodyIdA;
 			int sbB = m_allConstraintPtrArray[i]->m_solverBodyIdB;
-			btRigidBody* orgBodyA = m_tmpSolverBodyPool[sbA].m_originalBody;
-			btRigidBody* orgBodyB = m_tmpSolverBodyPool[sbB].m_originalBody;
+		//	btRigidBody* orgBodyA = m_tmpSolverBodyPool[sbA].m_originalBody;
+		//	btRigidBody* orgBodyB = m_tmpSolverBodyPool[sbB].m_originalBody;
 
 			numRows = i<m_tmpSolverNonContactConstraintPool.size() ? m_tmpConstraintSizesPool[c].m_numConstraintRows : numContactRows ;
 					
@@ -410,9 +409,9 @@ void btMLCPSolver::createMLCPFast(const btContactSolverInfo& infoGlobal)
 			for (;row__<numJointRows;)
 			{
 
-				int sbA = m_allConstraintPtrArray[row__]->m_solverBodyIdA;
+				//int sbA = m_allConstraintPtrArray[row__]->m_solverBodyIdA;
 				int sbB = m_allConstraintPtrArray[row__]->m_solverBodyIdB;
-				btRigidBody* orgBodyA = m_tmpSolverBodyPool[sbA].m_originalBody;
+			//	btRigidBody* orgBodyA = m_tmpSolverBodyPool[sbA].m_originalBody;
 				btRigidBody* orgBodyB = m_tmpSolverBodyPool[sbB].m_originalBody;
 
 
@@ -436,7 +435,7 @@ void btMLCPSolver::createMLCPFast(const btContactSolverInfo& infoGlobal)
 		// add cfm to the diagonal of m_A
 		for ( int i=0; i<m_A.rows(); ++i) 
 		{
-			m_A.setElem(i,i,m_A(i,i)+ m_cfm / infoGlobal.m_timeStep);
+			m_A.setElem(i,i,m_A(i,i)+ infoGlobal.m_globalCfm/ infoGlobal.m_timeStep);
 		}
 	}
 				   
@@ -490,7 +489,7 @@ void btMLCPSolver::createMLCP(const btContactSolverInfo& infoGlobal)
 		}
 	}
  
-	static btMatrixXu Minv;
+    btMatrixXu& Minv = m_scratchMInv;
 	Minv.resize(6*numBodies,6*numBodies);
 	Minv.setZero();
 	for (int i=0;i<numBodies;i++)
@@ -507,7 +506,7 @@ void btMLCPSolver::createMLCP(const btContactSolverInfo& infoGlobal)
 				setElem(Minv,i*6+3+r,i*6+3+c,orgBody? orgBody->getInvInertiaTensorWorld()[r][c] : 0);
 	}
  
-	static btMatrixXu J;
+    btMatrixXu& J = m_scratchJ;
 	J.resize(numConstraintRows,6*numBodies);
 	J.setZero();
  
@@ -542,10 +541,10 @@ void btMLCPSolver::createMLCP(const btContactSolverInfo& infoGlobal)
 		}
 	}
  
-	static btMatrixXu J_transpose;
+    btMatrixXu& J_transpose = m_scratchJTranspose;
 	J_transpose= J.transpose();
 
-	static btMatrixXu tmp;
+    btMatrixXu& tmp = m_scratchTmp;
 
 	{
 		{
@@ -564,7 +563,7 @@ void btMLCPSolver::createMLCP(const btContactSolverInfo& infoGlobal)
 		// add cfm to the diagonal of m_A
 		for ( int i=0; i<m_A.rows(); ++i) 
 		{
-			m_A.setElem(i,i,m_A(i,i)+ m_cfm / infoGlobal.m_timeStep);
+			m_A.setElem(i,i,m_A(i,i)+ infoGlobal.m_globalCfm / infoGlobal.m_timeStep);
 		}
 	}
 
@@ -603,8 +602,8 @@ btScalar btMLCPSolver::solveGroupCacheFriendlyIterations(btCollisionObject** bod
 				btSolverConstraint& c = *m_allConstraintPtrArray[i];
 				int sbA = c.m_solverBodyIdA;
 				int sbB = c.m_solverBodyIdB;
-				btRigidBody* orgBodyA = m_tmpSolverBodyPool[sbA].m_originalBody;
-				btRigidBody* orgBodyB = m_tmpSolverBodyPool[sbB].m_originalBody;
+				//btRigidBody* orgBodyA = m_tmpSolverBodyPool[sbA].m_originalBody;
+			//	btRigidBody* orgBodyB = m_tmpSolverBodyPool[sbB].m_originalBody;
 
 				btSolverBody& solverBodyA = m_tmpSolverBodyPool[sbA];
 				btSolverBody& solverBodyB = m_tmpSolverBodyPool[sbB];

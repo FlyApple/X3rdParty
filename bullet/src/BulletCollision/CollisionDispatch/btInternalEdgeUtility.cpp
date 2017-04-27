@@ -114,7 +114,6 @@ struct btConnectivityProcessor : public btTriangleCallback
 			if(numshared >= 3)
 				return;
 		}
-		
 		switch (numshared)
 		{
 		case 0:
@@ -194,7 +193,7 @@ struct btConnectivityProcessor : public btTriangleCallback
 				btScalar len2 = calculatedEdge.length2();
 
 				btScalar correctedAngle(0);
-				btVector3 calculatedNormalB = normalA;
+				//btVector3 calculatedNormalB = normalA;
 				bool isConvex = false;
 
 				if (len2<m_triangleInfoMap->m_planarEpsilon)
@@ -203,6 +202,7 @@ struct btConnectivityProcessor : public btTriangleCallback
 					ang4 = 0.f;
 				} else
 				{
+
 					calculatedEdge.normalize();
 					btVector3 calculatedNormalA = calculatedEdge.cross(edgeCrossA);
 					calculatedNormalA.normalize();
@@ -213,10 +213,6 @@ struct btConnectivityProcessor : public btTriangleCallback
 					isConvex = (dotA<0.);
 
 					correctedAngle = isConvex ? ang4 : -ang4;
-					btQuaternion orn2 = btQuaternion(btVector3(calculatedEdge.x(), calculatedEdge.y(), calculatedEdge.z()),-correctedAngle);
-					calculatedNormalB = btMatrix3x3(orn2)*normalA;
-
-
 				}
 
 				
@@ -301,6 +297,11 @@ struct btConnectivityProcessor : public btTriangleCallback
 
 				break;
 			}
+		default:
+			{
+				//				printf("warning: duplicate triangle\n");
+			}
+
 		}
 	}
 };
