@@ -1,3 +1,6 @@
+20170427:
+Added bullet physics sdk support;
+
 20170426:
 Added osx(Apple Mac System) platform support;
 
@@ -5,6 +8,10 @@ Added osx(Apple Mac System) platform support;
 The basic version has been collected to complete;
 
 -------------------------------------------------------------------------------------------
+bullet: version 2.86.0 (Bullet Physics SDK)
+https://github.com/bulletphysics/bullet3
+NOTE:Contains only the core, does not contain examples and other.
+
 glew : version 1.13.0 (only the windows platform)
 http://sourceforge.net/projects/glew/
 
