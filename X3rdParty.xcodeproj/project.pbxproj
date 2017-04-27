@@ -1778,6 +1778,7 @@
 		3BCF72991EB25066000EF50E /* b3ReduceContacts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = b3ReduceContacts.h; path = bullet/src/Bullet3Collision/NarrowPhaseCollision/shared/b3ReduceContacts.h; sourceTree = SOURCE_ROOT; };
 		3BCF729A1EB25066000EF50E /* b3RigidBodyData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = b3RigidBodyData.h; path = bullet/src/Bullet3Collision/NarrowPhaseCollision/shared/b3RigidBodyData.h; sourceTree = SOURCE_ROOT; };
 		3BCF729B1EB25066000EF50E /* b3UpdateAabbs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = b3UpdateAabbs.h; path = bullet/src/Bullet3Collision/NarrowPhaseCollision/shared/b3UpdateAabbs.h; sourceTree = SOURCE_ROOT; };
+		3BCF72AC1EB25957000EF50E /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1852,6 +1853,7 @@
 				3BCF6C511EAFD5FE000EF50E /* freeimage */,
 				3BCF6EA41EB248BF000EF50E /* BulletPhysics */,
 				3B5BDEAB1EA7BDA3009A3727 /* Products */,
+				3BCF72AC1EB25957000EF50E /* readme.txt */,
 			);
 			sourceTree = "<group>";
 		};
