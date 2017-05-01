@@ -24,6 +24,11 @@
 			<key>orderHint</key>
 			<integer>5</integer>
 		</dict>
+		<key>iconv.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
 		<key>lua.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -93,6 +98,11 @@
 			<true/>
 		</dict>
 		<key>3BCF6EA21EB248BF000EF50E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3BCF7B181EB79B40000EF50E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
