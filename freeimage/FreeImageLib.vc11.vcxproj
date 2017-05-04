@@ -387,6 +387,7 @@ copy "$(ProjectDir)\include\freeimage.h" "$(SolutionDir)\include\freeimage" /y
     <ClCompile Include="LibTIFF4\tif_error.c" />
     <ClCompile Include="LibTIFF4\tif_extension.c" />
     <ClCompile Include="LibTIFF4\tif_fax3.c" />
+    <ClCompile Include="LibTIFF4\tif_fax3sm.c" />
     <ClCompile Include="LibTIFF4\tif_flush.c" />
     <ClCompile Include="LibTIFF4\tif_getimage.c" />
     <ClCompile Include="LibTIFF4\tif_jpeg.c" />
@@ -415,6 +416,7 @@ copy "$(ProjectDir)\include\freeimage.h" "$(SolutionDir)\include\freeimage" /y
     <ClCompile Include="Metadata\IPTC.cpp" />
     <ClCompile Include="Metadata\TagConversion.cpp" />
     <ClCompile Include="Metadata\TagLib.cpp" />
+    <ClCompile Include="Metadata\XTIFF.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\CacheFile.h" />

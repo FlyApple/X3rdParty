@@ -61,9 +61,6 @@
     <ClCompile Include="Metadata\TagLib.cpp">
       <Filter>Metadata</Filter>
     </ClCompile>
-    <ClCompile Include="Metadata\XTIFF.cpp">
-      <Filter>Metadata</Filter>
-    </ClCompile>
     <ClCompile Include="FreeImage\BitmapAccess.cpp">
       <Filter>FreeImage</Filter>
     </ClCompile>
@@ -454,9 +451,6 @@
     <ClCompile Include="LibTIFF4\tif_extension.c">
       <Filter>LibTIFF4</Filter>
     </ClCompile>
-    <ClCompile Include="LibTIFF4\tif_fax3.c">
-      <Filter>LibTIFF4</Filter>
-    </ClCompile>
     <ClCompile Include="LibTIFF4\tif_flush.c">
       <Filter>LibTIFF4</Filter>
     </ClCompile>
@@ -521,6 +515,15 @@
       <Filter>LibTIFF4</Filter>
     </ClCompile>
     <ClCompile Include="LibTIFF4\tif_zip.c">
+      <Filter>LibTIFF4</Filter>
+    </ClCompile>
+    <ClCompile Include="Metadata\XTIFF.cpp">
+      <Filter>Metadata</Filter>
+    </ClCompile>
+    <ClCompile Include="LibTIFF4\tif_fax3.c">
+      <Filter>LibTIFF4</Filter>
+    </ClCompile>
+    <ClCompile Include="LibTIFF4\tif_fax3sm.c">
       <Filter>LibTIFF4</Filter>
     </ClCompile>
   </ItemGroup>
