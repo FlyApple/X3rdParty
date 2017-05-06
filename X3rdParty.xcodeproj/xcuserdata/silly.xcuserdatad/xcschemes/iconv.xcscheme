@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3BCF7B181EB79B40000EF50E"
-               BuildableName = "libiconv.dylib"
+               BlueprintIdentifier = "3BCF7B971EBE3D65000EF50E"
+               BuildableName = "libiconv.a"
                BlueprintName = "iconv"
                ReferencedContainer = "container:X3rdParty.xcodeproj">
             </BuildableReference>
@@ -45,8 +45,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3BCF7B181EB79B40000EF50E"
-            BuildableName = "libiconv.dylib"
+            BlueprintIdentifier = "3BCF7B971EBE3D65000EF50E"
+            BuildableName = "libiconv.a"
             BlueprintName = "iconv"
             ReferencedContainer = "container:X3rdParty.xcodeproj">
          </BuildableReference>
@@ -63,8 +63,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3BCF7B181EB79B40000EF50E"
-            BuildableName = "libiconv.dylib"
+            BlueprintIdentifier = "3BCF7B971EBE3D65000EF50E"
+            BuildableName = "libiconv.a"
             BlueprintName = "iconv"
             ReferencedContainer = "container:X3rdParty.xcodeproj">
          </BuildableReference>

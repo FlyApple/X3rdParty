@@ -17,12 +17,13 @@
  * If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <iconv.h>
 
 #include <limits.h>
 #include <stdlib.h>
 #include <string.h>
-#include "config.h"
+
+#include <config.h>
+#include "iconv.h"
 #include "localcharset.h"
 
 #ifdef __CYGWIN__
@@ -328,7 +329,7 @@ int iconvctl (iconv_t icd, int request, void* argument)
       return 0;
     case ICONV_SET_HOOKS:
       if (argument != NULL) {
-        cd->hooks = *(const struct iconv_hooks *)argument;
+        cd->hooks = *(const struct iconv_hooks_t *)argument;
       } else {
         cd->hooks.uc_hook = NULL;
         cd->hooks.wc_hook = NULL;
@@ -337,7 +338,7 @@ int iconvctl (iconv_t icd, int request, void* argument)
       return 0;
     case ICONV_SET_FALLBACKS:
       if (argument != NULL) {
-        cd->fallbacks = *(const struct iconv_fallbacks *)argument;
+        cd->fallbacks = *(const struct iconv_fallbacks_t *)argument;
       } else {
         cd->fallbacks.mb_to_uc_fallback = NULL;
         cd->fallbacks.uc_to_mb_fallback = NULL;

@@ -17,9 +17,11 @@
 
 /* Written by Bruno Haible <bruno@clisp.org>.  */
 
+
 #include <config.h>
 
 /* Specification.  */
+#include "iconv.h"
 #include "localcharset.h"
 
 #include <fcntl.h>

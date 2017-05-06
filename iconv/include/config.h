@@ -1212,4 +1212,13 @@
 #endif
 
 /* */
+#if defined __GNUC__
+#ifdef __APPLE__
+#define LIBDIR	"./"
+#endif
+#endif
+
+/* */
 #define NO_XMALLOC
+#define HAVE_WORKING_O_NOFOLLOW		(1)
+

@@ -108,8 +108,8 @@ struct conv_struct {
   int transliterate;
   int discard_ilseq;
   #ifndef LIBICONV_PLUG
-  struct iconv_fallbacks fallbacks;
-  struct iconv_hooks hooks;
+  struct iconv_fallbacks_t fallbacks;
+  struct iconv_hooks_t hooks;
   #endif
 };
 

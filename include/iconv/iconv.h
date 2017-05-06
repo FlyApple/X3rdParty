@@ -134,7 +134,7 @@ typedef void (*iconv_unicode_char_hook) (unsigned int uc, void* data);
 /* Hook performed after every successful conversion of a wide character. */
 typedef void (*iconv_wide_char_hook) (wchar_t wc, void* data);
 /* Set of hooks. */
-struct iconv_hooks {
+struct iconv_hooks_t {
   iconv_unicode_char_hook uc_hook;
   iconv_wide_char_hook wc_hook;
   void* data;
@@ -160,6 +160,8 @@ typedef void (*iconv_unicode_uc_to_mb_fallback)
                                          void* callback_arg),
               void* callback_arg,
               void* data);
+	
+
 #if HAVE_WCHAR_T
 /* Fallback function.  Invoked when a number of bytes could not be converted to
    a wide character.  This function should process all bytes from inbuf and may
@@ -186,16 +188,18 @@ typedef void (*iconv_wchar_wc_to_mb_fallback)
    invoked.  Their argument list therefore does not matter.  */
 typedef void (*iconv_wchar_mb_to_wc_fallback) ();
 typedef void (*iconv_wchar_wc_to_mb_fallback) ();
-#endif
-/* Set of fallbacks. */
-struct iconv_fallbacks {
-  iconv_unicode_mb_to_uc_fallback mb_to_uc_fallback;
-  iconv_unicode_uc_to_mb_fallback uc_to_mb_fallback;
-  iconv_wchar_mb_to_wc_fallback mb_to_wc_fallback;
-  iconv_wchar_wc_to_mb_fallback wc_to_mb_fallback;
-  void* data;
-};
 
+#endif
+
+/* Set of fallbacks. */
+struct iconv_fallbacks_t {
+	iconv_unicode_mb_to_uc_fallback mb_to_uc_fallback;
+	iconv_unicode_uc_to_mb_fallback uc_to_mb_fallback;
+	iconv_wchar_mb_to_wc_fallback mb_to_wc_fallback;
+	iconv_wchar_wc_to_mb_fallback wc_to_mb_fallback;
+	void* data;
+};
+	
 /* Requests for iconvctl. */
 #define ICONV_TRIVIALP            0  /* int *argument */
 #define ICONV_GET_TRANSLITERATE   1  /* int *argument */
