@@ -1,3 +1,6 @@
+20170516:
+Added ios(Apple moblie System) platform support;
+
 20170427:
 Added bullet physics sdk support;
 

@@ -42,7 +42,7 @@
 		<key>zlib.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>9</integer>
+			<integer>0</integer>
 		</dict>
 		<key>zziplib.xcscheme</key>
 		<dict>
