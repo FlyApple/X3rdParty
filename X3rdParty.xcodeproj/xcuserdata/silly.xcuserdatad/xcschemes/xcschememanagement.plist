@@ -24,6 +24,11 @@
 			<key>orderHint</key>
 			<integer>5</integer>
 		</dict>
+		<key>glew.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>9</integer>
+		</dict>
 		<key>iconv.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -73,6 +78,11 @@
 			<true/>
 		</dict>
 		<key>3B5BDF421EA7D174009A3727</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3B6F79801ECF499600E3D303</key>
 		<dict>
 			<key>primary</key>
 			<true/>

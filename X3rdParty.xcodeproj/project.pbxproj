@@ -56,6 +56,8 @@
 		3B5BDF571EA7D20A009A3727 /* tinyxmlparser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3B5BDF511EA7D20A009A3727 /* tinyxmlparser.cpp */; };
 		3B5BDF581EA7D20A009A3727 /* tinystr.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B5BDF521EA7D20A009A3727 /* tinystr.h */; };
 		3B5BDF591EA7D20A009A3727 /* tinyxml.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B5BDF531EA7D20A009A3727 /* tinyxml.h */; };
+		3B6F798D1ECF4A1000E3D303 /* glew.c in Sources */ = {isa = PBXBuildFile; fileRef = 3B6F798C1ECF4A1000E3D303 /* glew.c */; };
+		3B6F798F1ECF4A2200E3D303 /* glew.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B6F798E1ECF4A2200E3D303 /* glew.h */; };
 		3BCF6B501EA8E7F2000EF50E /* lapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 3BCF6B2D1EA8E7F2000EF50E /* lapi.c */; };
 		3BCF6B511EA8E7F2000EF50E /* lauxlib.c in Sources */ = {isa = PBXBuildFile; fileRef = 3BCF6B2E1EA8E7F2000EF50E /* lauxlib.c */; };
 		3BCF6B521EA8E7F2000EF50E /* lbaselib.c in Sources */ = {isa = PBXBuildFile; fileRef = 3BCF6B2F1EA8E7F2000EF50E /* lbaselib.c */; };
@@ -963,6 +965,9 @@
 		3B5BDF511EA7D20A009A3727 /* tinyxmlparser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tinyxmlparser.cpp; path = src/tinyxmlparser.cpp; sourceTree = "<group>"; };
 		3B5BDF521EA7D20A009A3727 /* tinystr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tinystr.h; path = src/tinystr.h; sourceTree = "<group>"; };
 		3B5BDF531EA7D20A009A3727 /* tinyxml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tinyxml.h; path = src/tinyxml.h; sourceTree = "<group>"; };
+		3B6F79811ECF499600E3D303 /* libglew.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libglew.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B6F798C1ECF4A1000E3D303 /* glew.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = glew.c; path = src/glew.c; sourceTree = "<group>"; };
+		3B6F798E1ECF4A2200E3D303 /* glew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = glew.h; path = include/GL/glew.h; sourceTree = "<group>"; };
 		3BCF6B211EA8E782000EF50E /* liblua.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblua.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BCF6B2D1EA8E7F2000EF50E /* lapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lapi.c; path = src/lapi.c; sourceTree = "<group>"; };
 		3BCF6B2E1EA8E7F2000EF50E /* lauxlib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lauxlib.c; path = src/lauxlib.c; sourceTree = "<group>"; };
@@ -1846,6 +1851,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3B6F797E1ECF499600E3D303 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3BCF6B1E1EA8E782000EF50E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1903,6 +1915,7 @@
 				3BCF6C511EAFD5FE000EF50E /* freeimage */,
 				3BCF6EA41EB248BF000EF50E /* BulletPhysics */,
 				3BCF7B1A1EB79B40000EF50E /* iconv */,
+				3B6F79821ECF499600E3D303 /* glew */,
 				3B5BDEAB1EA7BDA3009A3727 /* Products */,
 				3BCF72AC1EB25957000EF50E /* readme.txt */,
 			);
@@ -1920,6 +1933,7 @@
 				3BCF6C501EAFD5FE000EF50E /* libfreeimage.a */,
 				3BCF6EA31EB248BF000EF50E /* libBulletPhysics.a */,
 				3BCF7B981EBE3D65000EF50E /* libiconv.a */,
+				3B6F79811ECF499600E3D303 /* libglew.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2024,6 +2038,15 @@
 				3B5BDF531EA7D20A009A3727 /* tinyxml.h */,
 			);
 			path = tinyxml;
+			sourceTree = "<group>";
+		};
+		3B6F79821ECF499600E3D303 /* glew */ = {
+			isa = PBXGroup;
+			children = (
+				3B6F798E1ECF4A2200E3D303 /* glew.h */,
+				3B6F798C1ECF4A1000E3D303 /* glew.c */,
+			);
+			path = glew;
 			sourceTree = "<group>";
 		};
 		3BCF6B221EA8E782000EF50E /* lua */ = {
@@ -3362,6 +3385,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3B6F797F1ECF499600E3D303 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B6F798F1ECF4A2200E3D303 /* glew.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3BCF6B1F1EA8E782000EF50E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -3878,6 +3909,23 @@
 			productReference = 3B5BDF431EA7D174009A3727 /* libtinyxml.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		3B6F79801ECF499600E3D303 /* glew */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B6F798B1ECF499600E3D303 /* Build configuration list for PBXNativeTarget "glew" */;
+			buildPhases = (
+				3B6F797D1ECF499600E3D303 /* Sources */,
+				3B6F797E1ECF499600E3D303 /* Frameworks */,
+				3B6F797F1ECF499600E3D303 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = glew;
+			productName = glew;
+			productReference = 3B6F79811ECF499600E3D303 /* libglew.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		3BCF6B201EA8E782000EF50E /* lua */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3BCF6B2B1EA8E782000EF50E /* Build configuration list for PBXNativeTarget "lua" */;
@@ -4001,6 +4049,10 @@
 						CreatedOnToolsVersion = 8.3.2;
 						ProvisioningStyle = Automatic;
 					};
+					3B6F79801ECF499600E3D303 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
 					3BCF6B201EA8E782000EF50E = {
 						CreatedOnToolsVersion = 8.3.2;
 						ProvisioningStyle = Automatic;
@@ -4048,6 +4100,7 @@
 				3BCF6C4F1EAFD5FE000EF50E /* freeimage */,
 				3BCF6EA21EB248BF000EF50E /* BulletPhysics */,
 				3BCF7B971EBE3D65000EF50E /* iconv */,
+				3B6F79801ECF499600E3D303 /* glew */,
 			);
 		};
 /* End PBXProject section */
@@ -4094,6 +4147,14 @@
 				3B5BDF561EA7D20A009A3727 /* tinyxmlerror.cpp in Sources */,
 				3B5BDF541EA7D20A009A3727 /* tinystr.cpp in Sources */,
 				3B5BDF551EA7D20A009A3727 /* tinyxml.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B6F797D1ECF499600E3D303 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B6F798D1ECF4A1000E3D303 /* glew.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4743,6 +4804,40 @@
 			};
 			name = Release;
 		};
+		3B6F79891ECF499600E3D303 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ENABLE_MODULES = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					GLEW_STATIC,
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = glew/include;
+			};
+			name = Debug;
+		};
+		3B6F798A1ECF499600E3D303 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ENABLE_MODULES = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = GLEW_STATIC;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = glew/include;
+			};
+			name = Release;
+		};
 		3BCF6B291EA8E782000EF50E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -4964,6 +5059,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		3B6F798B1ECF499600E3D303 /* Build configuration list for PBXNativeTarget "glew" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B6F79891ECF499600E3D303 /* Debug */,
+				3B6F798A1ECF499600E3D303 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		3BCF6B2B1EA8E782000EF50E /* Build configuration list for PBXNativeTarget "lua" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -5016,6 +5119,7 @@
 				3BCF7BA21EBE3D65000EF50E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

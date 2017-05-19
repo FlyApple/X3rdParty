@@ -87,6 +87,9 @@
 #if defined(__gl2_h_)
 #error gl2.h included before glew.h
 #endif
+#if defined(__gl3_h_)
+#error gl3.h included before glew.h
+#endif
 #if defined(__gltypes_h_)
 #error gltypes.h included before glew.h
 #endif
@@ -102,6 +105,7 @@
 
 #define __gl_h_
 #define __gl2_h_
+#define __gl3_h_
 #define __GL_H__
 #define _GL_H
 #define __gltypes_h_
@@ -16423,6 +16427,7 @@ struct GLEWContextStruct
 {
 #endif /* GLEW_MX */
 
+
 GLEW_FUN_EXPORT PFNGLCOPYTEXSUBIMAGE3DPROC __glewCopyTexSubImage3D;
 GLEW_FUN_EXPORT PFNGLDRAWRANGEELEMENTSPROC __glewDrawRangeElements;
 GLEW_FUN_EXPORT PFNGLTEXIMAGE3DPROC __glewTexImage3D;
@@ -19072,6 +19077,7 @@ GLEW_FUN_EXPORT PFNGLTEXCOORD4FVERTEX4FVSUNPROC __glewTexCoord4fVertex4fvSUN;
 
 GLEW_FUN_EXPORT PFNGLADDSWAPHINTRECTWINPROC __glewAddSwapHintRectWIN;
 
+	
 #if defined(GLEW_MX) && !defined(_WIN32)
 struct GLEWContextStruct
 {
