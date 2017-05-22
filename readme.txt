@@ -1,3 +1,6 @@
+20170522:
+update glew version to 2.0.1
+
 20170516:
 Added ios(Apple moblie System) platform support;
 

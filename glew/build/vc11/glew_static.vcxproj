@@ -18,6 +18,9 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\glew.c" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <SccProjectName />
     <SccLocalPath />
@@ -229,16 +232,6 @@ copy "$(ProjectDir)..\..\include\GL\wglew.h" "$(SolutionDir)\include\GL" /y
       <AdditionalIncludeDirectories>../../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\src\glew.c" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\include\GL\glew.h" />
-    <ClInclude Include="..\..\include\GL\wglew.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="..\glew.rc" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
