@@ -1,3 +1,6 @@
+20171023:
+Added cryptopp library (only windows x32/x64)
+
 20170522:
 update glew version to 2.0.1
 
@@ -95,6 +98,9 @@ http://www.ijg.org/
 libpng: version 1.6.16
 http://www.libpng.org/
 
-libmng: verison 2.0.3 
+libmng: version 2.0.3 
 http://sourceforge.net/projects/libmng/
+
+cryptlib: version 5.6.5
+https://www.cryptopp.com/#download
 
