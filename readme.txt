@@ -1,3 +1,6 @@
+20171024:
+Added openssl library(only windows x32/x64)
+
 20171023:
 Added cryptopp library (only windows x32/x64)
 
@@ -104,3 +107,5 @@ http://sourceforge.net/projects/libmng/
 cryptlib: version 5.6.5
 https://www.cryptopp.com/#download
 
+openssl: version 1.0.2l
+https://www.openssl.org/source/

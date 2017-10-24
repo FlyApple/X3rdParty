@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ssl">
+      <UniqueIdentifier>{ae3db43e-952e-4133-b94a-a46abcffb827}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\ssl\s2_clnt.c">
+      <Filter>ssl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ssl\s2_enc.c">
+      <Filter>ssl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ssl\s2_lib.c">
+      <Filter>ssl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ssl\s2_meth.c">
+      <Filter>ssl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ssl\s2_pkt.c">
+      <Filter>ssl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ssl\s2_srvr.c">
+      <Filter>ssl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ssl\s3_both.c">
+      <Filter>ssl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ssl\s3_cbc.c">
+      <Filter>ssl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ssl\s3_clnt.c">
+      <Filter>ssl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ssl\s3_enc.c">
+      <Filter>ssl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ssl\s3_lib.c">
+      <Filter>ssl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ssl\s3_meth.c">
+      <Filter>ssl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ssl\s3_pkt.c">
+      <Filter>ssl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ssl\s3_srvr.c">
+      <Filter>ssl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ssl\s23_clnt.c">
+      <Filter>ssl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ssl\s23_lib.c">
+      <Filter>ssl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ssl\s23_meth.c">
+      <Filter>ssl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ssl\s23_pkt.c">
+      <Filter>ssl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ssl\s23_srvr.c">
+      <Filter>ssl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ssl\d1_both.c">
+      <Filter>ssl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ssl\d1_clnt.c">
+      <Filter>ssl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ssl\d1_lib.c">
+      <Filter>ssl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ssl\d1_meth.c">
+      <Filter>ssl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ssl\d1_pkt.c">
+      <Filter>ssl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ssl\d1_srtp.c">
+      <Filter>ssl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ssl\d1_srvr.c">
+      <Filter>ssl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ssl\ssl_algs.c">
+      <Filter>ssl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ssl\ssl_asn1.c">
+      <Filter>ssl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ssl\ssl_cert.c">
+      <Filter>ssl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ssl\ssl_ciph.c">
+      <Filter>ssl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ssl\ssl_conf.c">
+      <Filter>ssl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ssl\ssl_err.c">
+      <Filter>ssl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ssl\ssl_err2.c">
+      <Filter>ssl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ssl\ssl_lib.c">
+      <Filter>ssl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ssl\ssl_rsa.c">
+      <Filter>ssl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ssl\ssl_sess.c">
+      <Filter>ssl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ssl\ssl_stat.c">
+      <Filter>ssl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ssl\ssl_txt.c">
+      <Filter>ssl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ssl\ssl_utst.c">
+      <Filter>ssl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ssl\t1_clnt.c">
+      <Filter>ssl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ssl\t1_enc.c">
+      <Filter>ssl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ssl\t1_ext.c">
+      <Filter>ssl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ssl\t1_lib.c">
+      <Filter>ssl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ssl\t1_meth.c">
+      <Filter>ssl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ssl\t1_reneg.c">
+      <Filter>ssl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ssl\t1_srvr.c">
+      <Filter>ssl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ssl\t1_trce.c">
+      <Filter>ssl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ssl\bio_ssl.c">
+      <Filter>ssl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ssl\kssl.c">
+      <Filter>ssl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ssl\tls_srp.c">
+      <Filter>ssl</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
